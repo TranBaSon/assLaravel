@@ -10,12 +10,14 @@
 
     <script src="{{asset('/Utilities/jquery.js')}}"></script>
     <script src="{{asset('/bootstrap/dist/js/bootstrap.min.js')}}"></script>
-    <script src=" {{asset('/js/handleChat.js')}}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.js"></script>  
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/additional-methods.min.js"></script>
       
 
     <link href=" {{asset('/bootstrap/dist/css/bootstrap.min.css')}}" rel="stylesheet">
+    <style>
+      .error{ color:red; } 
+      </style>
 
 </head>
 <body>
@@ -34,8 +36,8 @@
               <span class="text-danger">{{ $errors->first('email') }}</span>
             </div>
             <div class="form-group">
-              <label for="exampleInputPassword1">Telephone</label>
-              <input type="password" class="form-control" id="exampleInputPassword1" name="telephone" >
+              <label for="exampleInputTelephone">Telephone</label>
+              <input type="text" class="form-control" id="exampleInputTelephone" name="telephone" >
               <span class="text-danger">{{ $errors->first('telephone') }}</span>
             </div>
             <div class="form-group">
